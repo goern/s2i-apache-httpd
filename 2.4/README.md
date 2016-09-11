@@ -15,13 +15,13 @@ resulting image with [Docker](http://docker.io) execute:
 
 *  **For RHEL based image**
     ```
-    $ s2i build https://github.com/goern/s2i-apache-httpd.git --context-dir=2.4/test/test-app goern/s2i-apache-httpd-24-rhel7 httpd-test-app
+    $ s2i build https://github.com/openshift/s2i-apache-httpd.git --context-dir=2.4/test/test-app openshift/s2i-apache-httpd-24-rhel7 httpd-test-app
     $ docker run -p 8080:8080 httpd-test-app
     ```
 
 *  **For CentOS based image**
     ```
-    $ s2i https://github.com/goern/s2i-apache-httpd.git --context-dir=2.4/test/test-app goern/s2i-apache-httpd-24-centos7 httpd-test-app
+    $ s2i https://github.com/openshift/s2i-apache-httpd.git --context-dir=2.4/test/test-app openshift/s2i-apache-httpd-24-centos7 httpd-test-app
     $ docker run -p 8080:8080 httpd-test-app
     ```
 
