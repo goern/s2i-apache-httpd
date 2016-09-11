@@ -21,8 +21,8 @@
               "sampleRepo": "https://github.com/goern/s2i-apache-httpd/tree/master/2.4/test/test-app"
             },
             "from": {
-              "kind": "ImageStreamTag",
-              "name": "2.4"
+              "kind": "DockerImage",
+              "name": "goern/s2i-apache-httpd-24-centos7:2.4.18"
             }
           },
           {

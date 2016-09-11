@@ -17,8 +17,8 @@ LABEL io.k8s.description="Platform for serving static files" \
 # Labels consumed by Red Hat build service
 LABEL Name="rhscl/httpd-24-rhel7" \
       BZComponent="rh-httpd24-docker" \
-      Version="2.4" \
-      Release="3" \
+      Version="2.4.18" \
+      Release="11" \
       Architecture="x86_64"
 
 # Install Apache httpd and PHP
