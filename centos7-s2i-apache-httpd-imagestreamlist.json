@@ -1,0 +1,45 @@
+{
+  "kind": "ImageStreamList",
+  "apiVersion": "v1",
+  "metadata": {},
+  "items": [
+    {
+      "kind": "ImageStream",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "apache-httpd",
+        "creationTimestamp": null
+      },
+      "spec": {
+        "tags": [
+          {
+            "name": "2.4",
+            "annotations": {
+              "description": "Platform for serving static files",
+              "tags": "builder,http,http24,apache,httpd,rhscl-httpd24",
+              "supports":"httpd:2.4,httpd",
+              "sampleRepo": "https://github.com/goern/s2i-apache-httpd/tree/master/2.4/test/test-app"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "2.4"
+            }
+          },
+          {
+            "name": "latest",
+            "annotations": {
+              "description": "Platform for serving static files",
+              "tags": "builder,http,http24,apache,httpd,rhscl-httpd24",
+              "supports":"httpd:2.4,httpd",
+              "sampleRepo": "https://github.com/goern/s2i-apache-httpd/tree/master/2.4/test/test-app"
+            },
+            "from": {
+              "kind": "ImageStreamTag",
+              "name": "2.4"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
